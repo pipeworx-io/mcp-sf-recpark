@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-sf-recpark",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "SF Rec & Park Events MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-sf-recpark": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "sf-recpark"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-sf-recpark.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/sf-recpark",
   "pipeworx": {
-    "sourceHash": "v1-85e014f2ea5d06a2097536d0baef67aa067c48bd0f9b390167b9acfa325dab59",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "sf-recpark",
+    "gatewaySlug": "sf-recpark",
+    "sourceHash": "v1-01c6c8dc71db724a5383b76b76b83093604c0dcde1e3094dd576f8df6ac231c3",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "events",
+    "description": "Upcoming San Francisco Rec & Park events & programming (parks, plazas, rec centers). Filter by date window and keyword (title/location/description). Free/outdoor/community civic events.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Earliest event date YYYY-MM-DD (default: today)."
+        },
+        "to": {
+          "type": "string",
+          "description": "Latest event date YYYY-MM-DD (default: no upper bound)."
+        },
+        "query": {
+          "type": "string",
+          "description": "Keyword over title, location, and description, e.g. \"yoga\", \"Golden Gate\", \"kids\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max events to return (1-100, default 50)."
+        }
+      }
+    }
+  }
+]
