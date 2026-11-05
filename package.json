@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-sf-recpark",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SF Rec & Park Events MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "sf-recpark",
     "gatewaySlug": "sf-recpark",
-    "sourceHash": "v1-01c6c8dc71db724a5383b76b76b83093604c0dcde1e3094dd576f8df6ac231c3",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-8de83e6be54f2250e6e8eb1b4ca3c3a06032ad111305289f1fab14b141e2bd9e",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
